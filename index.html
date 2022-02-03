@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FOTO Meme Maker | Foxes Of The Opera</title>
+    <meta
+      name="description"
+      content="Make a meme with the Foxes Of The Opera.
+    Foxes Of The Opera are a NFT project built on the Fantom Blockchain."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="main-container">
+      <div class="nav-bar">
+        <img src="./assets/images/logo.png" id="logo" class="nav-logo" />
+        <h1>FOTO Meme Maker</h1>
+      </div>
+      <hr />
+      <div class="meme-generator">
+        <label>Select an image:</label>
+        <!--<input type="file" id="imageFileInput" />-->
+        <section class="image-selection-container">
+          <label>
+            <input
+              type="radio"
+              name="imageSelection"
+              value="image1"
+              id="image1"
+              onclick="handleClick(this);"
+              autocomplete="off"
+            />
+            <img src="./assets/images/meme1.png" />
+          </label>
+
+          <label>
+            <input
+              type="radio"
+              name="imageSelection"
+              value="image2"
+              id="image2"
+              onclick="handleClick(this);"
+              autocomplete="off"
+            />
+            <img src="./assets/images/meme2.png" />
+          </label>
+        </section>
+        <label>Top Text</label>
+        <input type="text" id="topTextInput" autocomplete="off" />
+        <label>Bottom Text</label>
+        <input type="text" id="bottomTextInput" autocomplete="off" />
+        <canvas id="meme"></canvas>
+
+        <a id="downloadLnk" download="foto-meme.jpg">
+          <button id="download">Download</button>
+        </a>
+      </div>
+      <div class="footer" id="footer">
+        ©2022 Foxes Of The Opera |
+        <a target="_blank" href="https://foxopera.house" rel="noopener">
+          foxopera.house</a
+        >
+      </div>
+    </div>
+    <script src="./assets/scripts.js" async defer></script>
+  </body>
+</html>
