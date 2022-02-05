@@ -132,6 +132,10 @@ table {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*CUSTOMIZATION*/
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #080e20;
   color: #fff;
@@ -229,4 +233,40 @@ button {
   padding: 5px 5px;
   color: black;
   cursor: pointer;
+}
+
+/*Mobile Responsiveness*/
+@media (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  .meme-generator {
+    display: none;
+    overflow-x: hidden;
+  }
+  .footer {
+    display: none;
+  }
+  .desktop-only {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    padding-top: 50px;
+  }
+  .nav-logo {
+    width: 50px;
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (min-width: 767.98px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
 }
